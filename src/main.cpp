@@ -1095,11 +1095,11 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
      }
      else if(nHeight < 5000)  
      {
-         nSubsidy = 5000 * COIN;
+         nSubsidy = 10 * COIN;
      }
-     else if(nHeight < 10000)  
+     else if(nHeight > 5000)  
      {
-         nSubsidy = 2500 * COIN;
+         nSubsidy = 5 * COIN;
      }
 
 static const int64 nTargetTimespan = 3.5 * 24 * 60 * 60; // Shirecoin: 3.5 days
